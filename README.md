@@ -2,6 +2,8 @@
 
 > ✨ An expanded starter template for Toollama.com applications
 
+For more basic projects, see [Cria](https://github.com/seanmcp/cria).
+
 ## Use
 
 ```sh
