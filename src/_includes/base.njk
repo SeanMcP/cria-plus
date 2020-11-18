@@ -12,16 +12,16 @@
       name="description"
       content="{{ description or app.description }}"
     />
-    <link rel="stylesheet" href="{{ 'assets/css/tl.css' | url }}" />
-    <link rel="stylesheet" href="{{ 'assets/css/styles.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/tl.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}" />
     {% for file in styles %}
-    <link rel="stylesheet" href="{{ 'assets/css/' + file | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/' + file | url }}" />
     {% endfor -%}
   </head>
   <body>
     {{ content | safe }}
   </body>
   {% for file in scripts %}
-  <script src="{{ 'assets/js/' + file | url }}" type="module"></script>
+  <script src="{{ '/assets/js/' + file | url }}" type="module"></script>
   {% endfor -%}
 </html>
