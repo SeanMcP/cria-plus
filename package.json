@@ -4,7 +4,8 @@
   "scripts": {
     "build": "eleventy",
     "prebuild": "mv docs/CNAME . || true && rm -rf docs/* && mv ./CNAME docs/ || true",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "update-tl.css": "curl https://raw.githubusercontent.com/seanmcp/tl.css/master/tl.css > src/assets/css/tl.css"
   },
   "license": "MIT",
   "dependencies": {
